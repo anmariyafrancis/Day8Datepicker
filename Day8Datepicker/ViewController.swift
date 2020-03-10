@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController
+class ViewController: UIViewController, UITextFieldDelegate
 {
         @IBOutlet weak var textField_Date: UITextField!
         var datePicker : UIDatePicker!
@@ -16,6 +16,7 @@ class ViewController: UIViewController
         override func viewDidLoad()
         {
             super.viewDidLoad()
+            textField_Date.delegate = self
             // Do any additional setup after loading the view, typically from a nib.
         }
 
